@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "vitest.explorer",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-azuretools.vscode-docker"
+    ]
+}

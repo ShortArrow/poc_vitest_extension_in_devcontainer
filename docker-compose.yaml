@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  frontend:
+    tty: true
+    build: .
+    ports:
+      - 3001:3000
+    volumes:
+      - .:/app
+      - dev_node:/app/node_modules
+      - dev_pnpm:/app/.pnpm-store
+    entrypoint: /app/entrypoint.sh
+volumes:
+  dev_node:
+  dev_pnpm:
